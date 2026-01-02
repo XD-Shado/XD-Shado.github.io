@@ -1,46 +1,32 @@
 body {
   font-family: Arial, sans-serif;
   background: #0f172a;
-  color: #e5e7eb;
+  color: white;
   margin: 0;
 }
 
 header {
   text-align: center;
   padding: 40px;
-  background: #020617;
 }
 
 .projects {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 40px;
-  flex-wrap: wrap;
 }
 
-.card {
-  background: #020617;
+.project-card {
+  background: #1e293b;
   padding: 20px;
-  width: 300px;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
-.card h2 {
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
   color: #38bdf8;
-}
-
-.buttons {
-  margin-top: 15px;
-}
-
-.buttons a {
   text-decoration: none;
-  color: #020617;
-  background: #38bdf8;
-  padding: 8px 12px;
-  border-radius: 6px;
-  margin-right: 8px;
-  font-weight: bold;
 }
